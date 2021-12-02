@@ -1,7 +1,13 @@
+// .page-header__container {
+//   display: flex;
+//   align-items: center;
+// }
+
 .page-header__container {
   display: flex;
   align-items: center;
 }
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -10,14 +16,31 @@
   color: #000000;
 }
 // navigation
+
+// .page-header__main-nav {
+//   display: flex;
+//   align-items: center;
+// }
+
 .page-header__main-nav {
   display: flex;
   align-items: center;
 }
+
+// .site-nav {
+//   display: flex;
+//   margin-left: 93px;
+// }
+
 .site-nav {
   display: flex;
   margin-left: 93px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
+
 .site-nav__item + .site-nav__item {
   margin-left: 50px;
 }
