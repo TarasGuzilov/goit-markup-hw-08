@@ -1,0 +1,40 @@
+li {
+  list-style-type: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $background-color;
+}
+button {
+  font-family: Roboto, sans-serif;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h2,
+h3 {
+  color: $title-text-color;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
