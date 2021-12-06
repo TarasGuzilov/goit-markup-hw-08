@@ -46,6 +46,18 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
+        <button class="page-header__menu menu-button is-open"
+        type="button"
+        data-menu-button
+        >
+          <svg 
+            width="40px" 
+            height="40px" 
+            aria-label="Переключатель мобильного меню">
+            <use class="menu-button__icon-menu" href="./Images/sprite.svg#menu_open"></use>
+            <use class="menu-button__icon-cross" href="./Images/sprite.svg#menu_close"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -394,49 +406,51 @@
 
     <footer class="page-footer">
       <div class="container page-footer__container">
-        <div>
-          <a class="page-footer__logo logo" href="./index.html">
-            Web<span class="page-footer__logo-color">Studio</span>
-          </a>
-          <address class="page-footer__address address">
-            г. Киев, пр-т Леси Украинки, 26
-            <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
-            <a href="tell:+380961111111" class="address__link">+38 096 111 11 11</a>
-          </address>
-        </div>
-
-        <div class="page-footer__join-section join-section">
-          <b class="join-section__title">Присоединяйтесь</b>
-          <ul class="join-section__social-web-list social-web-list">
-            <li class="social-web-list__item">
-              <a href="#" class="social-web-list__link">
-                <svg class="social-web-list__icon join-section__icon" width="20px" height="20px">
-                  <use href="./Images/sprite.svg#instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-web-list__item">
-              <a href="#" class="social-web-list__link">
-                <svg class="social-web-list__icon join-section__icon" width="20px" height="20px">
-                  <use href="./Images/sprite.svg#twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-web-list__item">
-              <a href="#" class="social-web-list__link">
-                <svg class="social-web-list__icon join-section__icon" width="20px" height="20px">
-                  <use href="./Images/sprite.svg#facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-web-list__item">
-              <a href="#" class="social-web-list__link">
-                <svg class="social-web-list__icon join-section__icon" width="20px" height="20px">
-                  <use href="./Images/sprite.svg#linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="page-footer__cotainer-logo-address-join">
+          <div class="page-footer__cotainer-logo-address">
+            <a class="page-footer__logo logo" href="./index.html">
+              Web<span class="page-footer__logo-color">Studio</span>
+            </a>
+            <address class="page-footer__address address">
+              г. Киев, пр-т Леси Украинки, 26
+              <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+              <a href="tell:+380961111111" class="address__link">+38 096 111 11 11</a>
+            </address>
+          </div>
+          
+          <div class="page-footer__join-section join-section">
+            <b class="join-section__title">Присоединяйтесь</b>
+            <ul class="join-section__social-web-list social-web-list">
+              <li class="social-web-list__item">
+                <a href="#" class="social-web-list__link">
+                  <svg class="social-web-list__icon join-section__icon" width="20px" height="20px">
+                    <use href="./Images/sprite.svg#instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-web-list__item">
+                <a href="#" class="social-web-list__link">
+                  <svg class="social-web-list__icon join-section__icon" width="20px" height="20px">
+                    <use href="./Images/sprite.svg#twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-web-list__item">
+                <a href="#" class="social-web-list__link">
+                  <svg class="social-web-list__icon join-section__icon" width="20px" height="20px">
+                    <use href="./Images/sprite.svg#facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-web-list__item">
+                <a href="#" class="social-web-list__link">
+                  <svg class="social-web-list__icon join-section__icon" width="20px" height="20px">
+                    <use href="./Images/sprite.svg#linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="page-footer__subscribe-section subscribe-section">
@@ -457,6 +471,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
