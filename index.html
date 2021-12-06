@@ -46,18 +46,26 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
-        <button class="page-header__menu menu-button is-open"
+
+        <button class="page-header__menu-button menu-button is-open"
         type="button"
         data-menu-button
+        aria-expanded="false" 
+        aria-controls="menu-container"
         >
           <svg 
             width="40px" 
-            height="40px" 
+            height="40px"
             aria-label="Переключатель мобильного меню">
             <use class="menu-button__icon-menu" href="./Images/sprite.svg#menu_open"></use>
             <use class="menu-button__icon-cross" href="./Images/sprite.svg#menu_close"></use>
           </svg>
         </button>
+        <div class="menu-container is-open" 
+          data-menu 
+          id="menu-container">
+          Разметка мобильного меню
+        </div>
       </div>
     </header>
 
