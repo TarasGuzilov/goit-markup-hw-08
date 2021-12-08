@@ -14,11 +14,43 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../Images/Hero/image_hero.jpg);
+    url(../../Images/Hero/image_hero_480.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../Images/Hero/image_hero_480@2x.jpg);
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: url(../../Images/Hero/image_hero_768.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../Images/Hero/image_hero_768@2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../../Images/Hero/image_hero_1600.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../Images/Hero/image_hero_1600@2x.jpg);
+    }
+  }
+}
+
 .hero__title {
   margin: 0 auto 30px auto;
 
@@ -27,7 +59,7 @@
   font-weight: 900;
   line-height: 1.36;
   font-size: 44px;
-  width: 696px;
+  max-width: 696px;
 }
 .hero__button {
   padding: 10px 32px;
