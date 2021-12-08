@@ -28,12 +28,17 @@
   margin-top: calc(-1 * 30px);
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-left: calc(-1 * 30px);
   }
 }
+.team-section__item + .team-section__item {
+  margin-top: 30px;
+}
 .team-section__item {
   margin-top: 30px;
-  // min-width: 450px;
 
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
