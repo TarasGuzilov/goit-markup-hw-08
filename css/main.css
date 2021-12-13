@@ -208,7 +208,7 @@ img {
 
 .site-nav__link {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
@@ -261,7 +261,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .auth-nav {
-    margin-bottom: 25px;
+    margin-bottom: 32px;
   }
 }
 
@@ -290,7 +290,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .auth-nav__item + .auth-nav__item {
-    margin-top: 15px;
+    margin-top: 16px;
   }
 }
 
@@ -338,7 +338,7 @@ img {
 
 .auth-nav__tell {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 32px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -346,7 +346,7 @@ img {
 
 .auth-nav__mail {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
@@ -403,6 +403,11 @@ img {
 .page-header__social-web-item {
   margin-left: 10px;
   margin-bottom: 10px;
+}
+
+.page-header__social-web-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .page-header__social-web-link {
