@@ -110,17 +110,33 @@ img {
   color: #000000;
 }
 
+@media screen and (max-width: 479px) {
+  .menu-container {
+    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .menu-container {
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: calc((100% - 450px) / 2);
+    padding-right: calc((100% - 450px) / 2);
+  }
+}
+
 @media screen and (max-width: 767px) {
-  .page-header__menu-container {
-    position: absolute;
+  .menu-container {
+    position: fixed;
     z-index: 10;
-    top: 72px;
+    top: 0px;
     left: 0;
     overflow-y: scroll;
     width: 100vw;
     height: 100vh;
-    padding: 40px;
-    padding-top: 0;
     background-color: #ffffff;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
@@ -129,14 +145,14 @@ img {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .page-header__menu-container.is-open {
+  .menu-container.is-open {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .page-header__menu-container {
+  .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -397,10 +413,8 @@ img {
   color: #2196f3;
 }
 
-.menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.menu-toggle {
+  display: block;
   padding: 0;
   margin: 0;
   margin-left: auto;
@@ -408,26 +422,14 @@ img {
   background-color: transparent;
 }
 
-.menu-button:hover, .menu-button:focus {
+.menu-toggle:hover, .menu-toggle:focus {
   fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .menu-toggle {
     display: none;
   }
-}
-
-.menu-button .menu-button__icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .menu-button__icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .menu-button__icon-menu {
-  display: none;
 }
 
 .hero {

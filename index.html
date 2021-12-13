@@ -17,9 +17,16 @@
           Web<span class="page-header__logo-color">Studio</span>
         </a>
         
-        <div class="page-header__menu-container"
-        data-menu 
-        id="menu-container">
+        <div class="menu-container js-menu-container" 
+          id="mobile-menu">
+
+          <button type="button" 
+           class="menu-toggle js-close-menu">
+            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+              <use class="menu-button__icon-cross" href="./Images/sprite.svg#menu_close"></use>
+            </svg>
+          </button>
+
           <nav class="page-header__main-nav">
             <ul class="site-nav">
               <li class="site-nav__item">
@@ -65,18 +72,13 @@
           </ul>
         </div>
 
-        <button class="page-header__menu-button menu-button"
-        type="button"
-        data-menu-button
-        aria-expanded="false" 
-        aria-controls="menu-container"
-        >
-          <svg 
-            width="40px" 
-            height="40px"
-            aria-label="Переключатель мобильного меню">
+        <button type="button" 
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          >
+          <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
             <use class="menu-button__icon-menu" href="./Images/sprite.svg#menu_open"></use>
-            <use class="menu-button__icon-cross" href="./Images/sprite.svg#menu_close"></use>
           </svg>
         </button>
       </div>
@@ -565,7 +567,10 @@
         </div>
       </div>
     </footer>
-    <script src="./js/menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
